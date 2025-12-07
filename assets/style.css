@@ -5,13 +5,30 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* ACCENT COLOR */
+:root {
+    --accent: #3b82f6; /* Electric Blue */
+}
+
 /* HERO */
 .hero {
     height: 80vh;
-    background: #0b0b0b;
+    background: linear-gradient(140deg, #0b0b0b, #101522);
     display: flex;
     justify-content: center;
     text-align: center;
+    border-bottom: 2px solid var(--accent);
+}
+
+/* HERO BUTTON */
+.btn-accent {
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    transition: 0.3s;
+}
+.btn-accent:hover {
+    background: var(--accent);
+    color: #fff;
 }
 
 /* SECTIONS */
@@ -29,14 +46,13 @@ body {
     text-align: center;
     margin-bottom: 25px;
     font-size: 2rem;
-    color: #fff;
+    color: var(--accent);
 }
 
 .section-text {
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
-    color: #ccc;
 }
 
 /* SKILLS */
@@ -47,18 +63,39 @@ body {
     text-align: center;
     border-radius: 8px;
     margin: 10px;
+    border: 1px solid #222;
+    transition: 0.3s;
+}
+.skill-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
 }
 
 /* PROJECTS */
 .project-card {
     background: #1a1a1a;
-    border-left: 4px solid #333;
+    border-left: 4px solid var(--accent);
     padding: 25px;
     color: #eee;
     border-radius: 8px;
+    transition: 0.3s;
+}
+.project-card:hover {
+    box-shadow: 0 0 18px rgba(59, 130, 246, 0.25);
+}
+
+/* PROJECT BUTTONS */
+.btn-outline-light {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+.btn-outline-light:hover {
+    background: var(--accent);
+    color: #fff;
 }
 
 /* FOOTER */
 .footer-dark {
     background: #0a0a0a;
+    border-top: 1px solid var(--accent);
 }
