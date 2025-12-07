@@ -68,7 +68,7 @@ body {
 }
 .skill-card:hover {
     border-color: var(--accent);
-    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 15px rgba(85, 82, 33, 0.3);
 }
 
 /* PROJECTS */
