@@ -1,0 +1,36 @@
+/* HERO */
+.hero {
+    background: #0d0d0d;
+    height: 80vh;
+    background-size: cover;
+}
+
+/* ABOUT */
+.about-text {
+    max-width: 700px;
+}
+
+/* SKILLS */
+#skills {
+    background: #111;
+}
+
+.skill-card {
+    background: #222;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+/* PROJECTS */
+.project-card {
+    border-left: 5px solid #111;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+}
